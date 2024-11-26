@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     color: white;
     background-image: url('/images/Background.jpg');
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
