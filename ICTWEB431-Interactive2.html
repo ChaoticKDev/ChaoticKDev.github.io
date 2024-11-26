@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Exercise Routine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-slogan">
+            <img src="LOGO.svg" alt="Company Logo" class="logo"viewBox="0 0 100 100" width="100" height="100" onclick="window.location.href='ICTWEB431-Website.html'">
+            <div class="logo-placeholder">Company name</div>
+            <div class="slogan">People. Productivity. Profitability.</div>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <button class="nav-button" onclick="window.location.href='ICTWEB431-Website.html'">Home Page</button>
+            <button class="nav-button" onclick="window.location.href='ICTWEB431-Interactive.html'">Work and Life Balance</button>
+            <button class="nav-button">Daily Exercise Routine</button>
+            <button class="nav-button" onclick="window.location.href='ICTWEB431-Gallery.html'">Image Gallery</button>
+            <button class="nav-button" onclick="window.location.href='ICTWEB431-Registration.html'">Registration Form</button>
+        </nav>
+        <main class="content">
+            <h1 class="main-heading">Daily Exercise Routine</h1>
+            <p>
+                Input the number of minutes you spend on exercising. The page will give you feedback and provide a random advice!
+            </p>
+            <form id="exerciseForm">
+                <label for="cardio">Cardio (minutes):</label>
+                <input type="number" id="cardio" name="cardio" min="0" required>
+    
+                <label for="strength">Strength Training (minutes):</label>
+                <input type="number" id="strength" name="strength" min="0" required>
+    
+                <label for="flexibility">Flexibility Exercises (minutes):</label>
+                <input type="number" id="flexibility" name="flexibility" min="0" required>
+    
+                <label for="rest">Rest and Recovery (minutes):</label>
+                <input type="number" id="rest" name="rest" min="0" required>
+    
+                <div class="form-actions">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+    
+            <div id="feedback"></div>
+        </main>
+        <script src="scripts/exerciseRoutine.js"></script>
+    </body>
+    </html>
